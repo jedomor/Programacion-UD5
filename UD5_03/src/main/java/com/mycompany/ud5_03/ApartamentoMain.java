@@ -37,6 +37,6 @@ public class ApartamentoMain {
         System.out.println("Dirección: "+apt1.getDireccionPostal());
         System.out.println("Numero de camas: "+apt1.getNumeroCamas());
         System.out.println("Numero de habitaciones: "+apt1.getNumeroHabitaciones());
-        System.out.println("Estado de ocupación: " +(apt1.isEstaOcupado() ? "Ocupada" : "Vacía"));
+        System.out.println("Estado de ocupación: " +(apt1.isEstaOcupado() ? "Ocupada" : "Vacía"));  
     }
 }
