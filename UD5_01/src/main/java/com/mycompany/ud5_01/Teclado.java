@@ -30,7 +30,7 @@ public class Teclado {
         int entero;
         while (true) {
             entero = leeEntero();
-            if (entero >= minimo && entero <= maximo) {
+            if (entero < minimo || entero > maximo) {
                 System.out.println("El número debe estar entre: " + minimo + " y " + maximo);
 
             } else {
@@ -43,7 +43,7 @@ public class Teclado {
         int entero;
         while (true) {
             entero = leeEntero();
-            if (entero <= maximo) {
+            if (entero > maximo) {
                 System.out.println("El número debe ser menor o igual que : " + maximo);
 
             } else {
@@ -56,7 +56,7 @@ public class Teclado {
         int entero;
         while (true) {
             entero = leeEntero();
-            if (entero >= minimo) {
+            if (entero < minimo) {
                 System.out.println("El número debe ser menor o igual que : " + minimo);
 
             } else {

@@ -1,0 +1,4 @@
+Este es mi fichero de pruebas
+para aprender a utilizar las
+checked exceptions.
+
