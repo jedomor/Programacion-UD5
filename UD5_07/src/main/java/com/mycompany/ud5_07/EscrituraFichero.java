@@ -55,18 +55,50 @@ public class EscrituraFichero {
         }
     }
 
-    public void escribeTexto(List<String>parrafo) throws IOException {
-        
+    public void escribeTexto(List<String> parrafo) throws IOException {
+
         if (abierto) {
-            Iterator<String>iter=parrafo.iterator();
+            Iterator<String> iter = parrafo.iterator();
             while (iter.hasNext()) {
                 String linea = iter.next();
                 pw.println();
-                
+
             }
         } else {
             throw new IllegalStateException("El fichero no está abierto");
         }
     }
 
+    public void abreEscribeCierra(List<String> texto) throws IOException {
+//ABRIR/TRY
+        try {
+            fichero = new File(nombreFichero);
+            fw = new FileWriter(fichero);
+            pw = new PrintWriter(fw);
+            abierto = true;
+            if (abierto) {
+                Iterator<String> iter = texto.iterator();
+                while (iter.hasNext()) {
+                    String linea = iter.next();
+                    pw.println();
+
+                }
+            } else {
+                throw new IllegalStateException("El fichero no está abierto");
+            }
+
+            if (abierto) {
+                pw.close();
+                fw.close();
+                abierto = false;
+            } else {
+                throw new IllegalStateException("El fichero no está abierto");
+            }
+        } catch (IOException e) {
+            System.out.println("Error al abrir o escribir ejercicio");
+        } //CERRAR/FINALLY
+        finally {
+
+        }
+    }
 }
