@@ -1,2 +1,16 @@
 /UD5_02/target/
 /UD5_03/target/
+/UD5_06/target/
+UD5-EJEMPLO01/src/main/java/es/tuespiral/u5/p1/adivinaexcepciones/Aplicacion.java
+UD5-EJEMPLO01/src/main/java/es/tuespiral/u5/p1/adivinaexcepciones/juego/JuegoAdivina.java
+UD5-EJEMPLO01/src/main/java/es/tuespiral/u5/p1/adivinaexcepciones/juego/Partida.java
+UD5-EJEMPLO02/pom.xml
+UD5-EJEMPLO02/prueba.txt
+UD5-EJEMPLO02/src/main/java/es/tuespiral/u5/p2/ficherocheckedexception/Fichero.java
+UD5-EJEMPLO02/src/main/java/es/tuespiral/u5/p2/ficherocheckedexception/PruebaFicheroCheckedException.java
+UD5-EJEMPLO03/pom.xml
+UD5-EJEMPLO03/prueba.txt
+UD5-EJEMPLO03/src/main/java/es/tuespiral/u5/p2/ficherocheckedexception/Fichero.java
+UD5-EJEMPLO03/src/main/java/es/tuespiral/u5/p2/ficherocheckedexception/PruebaFicheroThrowsCheckedException.java
+UD5_01/target/classes/.netbeans_automatic_build
+UD5_01/target/test-classes/.netbeans_automatic_build
