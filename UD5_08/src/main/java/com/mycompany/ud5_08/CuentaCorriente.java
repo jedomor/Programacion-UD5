@@ -7,6 +7,12 @@ public class CuentaCorriente {
     private double saldo;
 
     public CuentaCorriente(long numeroCuenta, String pin, double saldo) {
+        if (numeroCuenta<=0)
+            throw new IllegalArgumentException("Numero de cuenta no válido, es menor que 0");
+        if (pin.length()<4 && pin.length()>4)
+            throw new IllegalArgumentException("El codigo pin debe tener 4 digitos");
+        if (saldo<0)
+            throw new IllegalArgumentException("Este banco no permite saldos negativos");
         this.numeroCuenta = numeroCuenta;
         this.pin = pin;
         this.saldo = saldo;
